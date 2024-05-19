@@ -15,7 +15,8 @@
 }
 
 body{
-    background-color: rgb(243, 240, 240);
+    background: rgb(243, 240, 240) url('../images/wallpaper004.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 div#container{
     position: relative;
@@ -28,7 +29,7 @@ div#container{
     border: 1px solid rgba(0, 0, 0, 0.43);
     border-radius: 15px;
     box-shadow: 5px 5px 160px rgba(0, 0, 0, 0.242);
-    color: white;
+    color: rgb(235, 235, 235);
 }
 
 h1{
@@ -39,29 +40,31 @@ h1{
     letter-spacing: 5px;
 }
 
-section#linkedin{
+section#social-media{
     position: absolute;
-    top: 9.5%;
-    left: 75%;
+    top: 8.5%;
+    left: 77%;
+    word-spacing: 30px;
 }
 
-section#github{
-    position: absolute;
-    left: 85%;
-    top: 9.5%;
-}
-img{
-    width: 50px;
-    border-radius: 50%;
+
+a{
+    color:rgb(193,193,193);
+    text-align: right;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-weight: 900;
+    font-size: 2em;
 }
 
-img:hover{
-    border: 1.5px solid rgb(255, 255, 255);
-    transform: translate(3px, -3px);
-    transition: translate 0.3s border 0.4s;
-    
+a:hover{
+   color: white;
+   transition: color 0.2s;
 }
 
+a#linkedin:hover{
+    font-weight: bolder;
+}
 
 p{
     padding-left: 20px;
@@ -73,4 +76,37 @@ p{
     font-family: var(--font2);
     font-size: 1.2em;
     letter-spacing: 0.01em;
+}
+
+section#portifolio{
+    font-family: var(--font2);
+    color:white;
+    font-size: 0.4em;
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+    text-align: justify;
+    letter-spacing: 0.01em;
+}
+
+
+section#portifolio h2{
+    text-align: justify;
+    font-family: var(--font1);
+    color:rgb(193,193,193);
+    font-size: 5em;
+}
+
+section#portifolio:hover h2{
+    color: white;
+}
+
+section#portifolio p{
+    margin-left: -17px;
+    display: none;
+}
+
+section#portifolio:hover p{
+    margin-left: -17px;
+    display: block;
 }
